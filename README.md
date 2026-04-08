@@ -1,4 +1,5 @@
-# NEWS_data_LDA: 2026년 1월 네이버 경제 뉴스 데이터(1000개)를 크롤링해서 LDA를 사용해 토픽 모델링 (https://news-data-lda.onrender.com/docs)
+# NEWS_data_LDA: 뉴스 데이터(1000개)를 사용한 LDA 토픽 모델링 
+(https://news-data-lda.onrender.com/docs)
 
 ---
 ### 프로젝트 배경: 뉴스 기사 데이터는 정치, 경제, 사회 등 다양한 주제를 포함하고 있으며, 이를 효과적으로 분류하고 핵심 내용을 파악하는 것은
