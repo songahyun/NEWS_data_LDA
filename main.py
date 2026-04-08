@@ -37,13 +37,16 @@ def clean_text(text: str):
     text = re.sub(r'\s+', ' ', text)
     return text.strip()
 
+# def tokenize(text: str):
+#     tokens = []
+#     result = kiwi.analyze(text)[0][0]
+#     for token, pos, _, _ in result:
+#         if pos in TARGET_POS:
+#             tokens.append(token)
+#     return tokens
+
 def tokenize(text: str):
-    tokens = []
-    result = kiwi.analyze(text)[0][0]
-    for token, pos, _, _ in result:
-        if pos in TARGET_POS:
-            tokens.append(token)
-    return tokens
+    return text.split()
 
 def postprocess(tokens):
     return [
