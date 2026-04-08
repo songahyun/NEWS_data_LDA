@@ -43,24 +43,24 @@
 ---
 
 ### 파일 설명
-[일반 파일]
-01_crawl.ipynb: 네이버 뉴스 데이터를 크롤링하는 파일
-02_preprocess.ipynb: 수집한 뉴스 데이터의 전처리를 수행하는 파일
-03_analyze.ipynb: LDA를 활용한 토픽 모델링 수행 코드 파일
-04_visualize.ipynb: 토픽 모델링 결과를 시각화하는 파일
-05_API_prepare.ipynb: 모델을 API 형태로 활용하기 위해 전처리 및 추론 로직을 정리한 코드
-
-[데이터]
-news_dataset_economy.csv: 네이버 뉴스에서 크롤링한 원본 데이터(전처리 전 기사 1000개)
-news_preprocessed_economy.csv: 전처리 과정을 거친 뉴스 데이터(전처리 후 기사 978개)
-
-[Docker 관련 파일]
-Dockerfile: 애플리케이션 실행 환경을 정의하고 컨테이너 이미지를 생성하기 위한 설정
-.dockerignore: Docker 이미지 빌드 시 제외할 파일을 정의하는 설정 파일
-
-[모델 저장]
-lda_model.pkl: 학습된 LDA 토픽 모델
-dictionary.pkl: LDA 모델에서 사용하는 단어 사전(Dictionary)
-reqirements.txt: 프로젝트 실행에 필요한 Python 라이브러리 목록
-
-main.py: FastAPI를 기반으로 토픽 모델링 결과를 제공하는 REST API 서버 코
+[일반 파일]  
+01_crawl.ipynb: 네이버 뉴스 데이터를 크롤링하는 파일  
+02_preprocess.ipynb: 수집한 뉴스 데이터의 전처리를 수행하는 파일  
+03_analyze.ipynb: LDA를 활용한 토픽 모델링 수행 코드 파일  
+04_visualize.ipynb: 토픽 모델링 결과를 시각화하는 파일  
+05_API_prepare.ipynb: 모델을 API 형태로 활용하기 위해 전처리 및 추론 로직을 정리한 코드  
+  
+[데이터]  
+news_dataset_economy.csv: 네이버 뉴스에서 크롤링한 원본 데이터(전처리 전 기사 1000개)  
+news_preprocessed_economy.csv: 전처리 과정을 거친 뉴스 데이터(전처리 후 기사 978개)  
+  
+[Docker 관련 파일]  
+Dockerfile: 애플리케이션 실행 환경을 정의하고 컨테이너 이미지를 생성하기 위한 설정  
+.dockerignore: Docker 이미지 빌드 시 제외할 파일을 정의하는 설정 파일  
+  
+[모델 저장]  
+lda_model.pkl: 학습된 LDA 토픽 모델  
+dictionary.pkl: LDA 모델에서 사용하는 단어 사전(Dictionary)  
+reqirements.txt: 프로젝트 실행에 필요한 Python 라이브러리 목록  
+  
+main.py: FastAPI를 기반으로 토픽 모델링 결과를 제공하는 REST API 서버 코드
